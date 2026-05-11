@@ -1,0 +1,152 @@
+{
+  "bot": {
+    "name": "ARIA",
+    "fullName": "Automated Response Intelligence Assistant",
+    "version": "2.4.1",
+    "clinic": "NeoCare Medical Hub",
+    "avatar": "aria-avatar.png"
+  },
+  "responses": [
+    {
+      "id": "r001",
+      "category": "greeting",
+      "triggers": ["bonjour", "salut", "hello", "bonsoir", "hey"],
+      "message": "Bonjour ! Je suis ARIA, votre assistante medicale intelligente chez NeoCare. Comment puis-je vous aider aujourd'hui ?"
+    },
+    {
+      "id": "r002",
+      "category": "greeting",
+      "triggers": ["bonjour", "salut"],
+      "message": "Bonsoir ! Clinique NeoCare a votre service. Je suis ARIA. Quel est le motif de votre consultation ?"
+    },
+    {
+      "id": "r003",
+      "category": "appointment",
+      "triggers": ["rendez-vous", "consultation", "rdv", "prendre rdv"],
+      "message": "Je peux vous aider a planifier un rendez-vous. Quel service souhaitez-vous consulter : Cardiologie, Neurologie, Urgences ou Medecine generale ?"
+    },
+    {
+      "id": "r004",
+      "category": "appointment",
+      "triggers": ["rendez-vous", "disponible", "agenda"],
+      "message": "Les prochaines disponibilites en Medecine generale sont : demain a 09h30, apres-demain a 14h00 ou vendredi a 11h15. Laquelle vous convient ?"
+    },
+    {
+      "id": "r005",
+      "category": "symptoms",
+      "triggers": ["douleur", "mal", "douleurs", "souffre"],
+      "message": "Je comprends que vous souffrez. Pouvez-vous me preciser la localisation et l'intensite de la douleur sur une echelle de 1 a 10 ? Cela aidera le medecin a mieux vous prendre en charge."
+    },
+    {
+      "id": "r006",
+      "category": "symptoms",
+      "triggers": ["fievre", "temperature", "chaud"],
+      "message": "Une fievre peut indiquer plusieurs choses. Avez-vous pris votre temperature ? Si elle depasse 39degC depuis plus de 48h, je vous recommande de consulter un medecin en urgence."
+    },
+    {
+      "id": "r007",
+      "category": "symptoms",
+      "triggers": ["tete", "migraine", "cephalee", "maux de tete"],
+      "message": "Les cephalees peuvent avoir differentes origines. Sont-elles pulsatiles ? Accompagnees de nausees ou de sensibilite a la lumiere ? Ces informations aideront notre equipe a etablir un diagnostic."
+    },
+    {
+      "id": "r008",
+      "category": "emergency",
+      "triggers": ["urgence", "urgent", "douleur thoracique", "coeur"],
+      "message": "ALERTE : Si vous ressentez une douleur thoracique intense, appelez immediatement le 15 (SAMU) ou le 112. Ne patientez pas. Je transfère votre signalement a l'equipe des urgences NeoCare."
+    },
+    {
+      "id": "r009",
+      "category": "results",
+      "triggers": ["resultats", "analyses", "bilan", "examen"],
+      "message": "Vos resultats d'analyses sont generalement disponibles sous 48 a 72 heures sur votre espace patient NeoCare. Souhaitez-vous que je vous envoie une notification des qu'ils sont en ligne ?"
+    },
+    {
+      "id": "r010",
+      "category": "results",
+      "triggers": ["radio", "scanner", "irm", "imagerie"],
+      "message": "Les resultats d'imagerie medicale sont interpretes par notre radiologue et mis a disposition dans votre dossier patient sous 3 a 5 jours ouvrables. Le medecin referent vous contactera pour en discuter."
+    },
+    {
+      "id": "r011",
+      "category": "medication",
+      "triggers": ["medicament", "ordonnance", "prescription", "traitement"],
+      "message": "Pour tout renouvellement d'ordonnance, veuillez vous connecter a votre espace patient ou contacter directement votre medecin referent. Je ne suis pas autorisee a prescire des medicaments."
+    },
+    {
+      "id": "r012",
+      "category": "medication",
+      "triggers": ["allergie", "allergique", "intolerance"],
+      "message": "Il est tres important de noter vos allergies dans votre dossier medical. Souhaitez-vous que je transmette cette information a l'equipe soignante de NeoCare pour mise a jour de votre profil ?"
+    },
+    {
+      "id": "r013",
+      "category": "information",
+      "triggers": ["horaires", "ouverture", "heure"],
+      "message": "La clinique NeoCare Medical Hub est ouverte 24h/24, 7j/7 pour les urgences. Les consultations programmees se tiennent du lundi au vendredi de 08h00 a 19h00, et le samedi de 09h00 a 13h00."
+    },
+    {
+      "id": "r014",
+      "category": "information",
+      "triggers": ["adresse", "localisation", "ou", "acces"],
+      "message": "NeoCare Medical Hub est situe au 42 Avenue de la Science, NeoDistrict. Accessible par le Metro Ligne 7 (station BioTech) ou le BioTram T3. Parking intelligent disponible sous le batiment."
+    },
+    {
+      "id": "r015",
+      "category": "information",
+      "triggers": ["tarif", "prix", "cout", "remboursement", "assurance"],
+      "message": "Nos tarifs varient selon les actes medicaux. La plupart des consultations sont prises en charge par l'Assurance Maladie. Pour plus de details, notre service administratif est joignable au 0800-NEOCARE."
+    },
+    {
+      "id": "r016",
+      "category": "general",
+      "triggers": [],
+      "message": "Je suis ARIA, votre assistante NeoCare. Je peux vous aider avec : les rendez-vous, les resultats d'examens, les informations sur la clinique, ou orienter votre question vers le bon service medical."
+    },
+    {
+      "id": "r017",
+      "category": "general",
+      "triggers": [],
+      "message": "Je n'ai pas bien compris votre demande. Pourriez-vous la reformuler ? Vous pouvez aussi me demander de l'aide pour un rendez-vous, des resultats, ou des informations sur NeoCare."
+    },
+    {
+      "id": "r018",
+      "category": "general",
+      "triggers": [],
+      "message": "Votre demande a ete enregistree. Un membre de notre equipe medicale la traitera dans les plus brefs delais. Y a-t-il autre chose pour laquelle je peux vous assister ?"
+    },
+    {
+      "id": "r019",
+      "category": "wellbeing",
+      "triggers": ["stress", "anxiete", "anxieux", "panique", "angoisse"],
+      "message": "Je comprends votre inquietude. Respirez profondement : inspirez 4 secondes, bloquez 4 secondes, expirez 4 secondes. Si cette anxiete persiste, je vous recommande une consultation avec l'un de nos psychologues de NeoCare."
+    },
+    {
+      "id": "r020",
+      "category": "wellbeing",
+      "triggers": ["fatigue", "fatigue", "epuise", "dormir", "sommeil"],
+      "message": "La fatigue chronique peut signaler differentes conditions. Dormez-vous moins de 7h par nuit ? Des examens simples peuvent en identifier la cause. Voulez-vous prendre rendez-vous avec notre specialiste du sommeil ?"
+    },
+    {
+      "id": "r021",
+      "category": "farewell",
+      "triggers": ["merci", "au revoir", "bye", "bonne journee", "a bientot"],
+      "message": "Merci d'avoir contacte ARIA chez NeoCare Medical Hub. Prenez soin de vous et n'hesitez pas a revenir. Bonne journee !"
+    },
+    {
+      "id": "r022",
+      "category": "farewell",
+      "triggers": ["merci", "parfait", "super", "excellent"],
+      "message": "C'est avec plaisir ! N'oubliez pas : votre sante est notre priorite. L'equipe NeoCare est toujours la pour vous. A tres bientot !"
+    }
+  ],
+  "defaultResponses": [
+    "Je n'ai pas toutes les informations pour repondre a cela, mais notre equipe medicale sera ravie de vous aider. Souhaitez-vous etre mis en relation avec un professionnel de sante ?",
+    "Cette question necessite l'expertise de notre equipe medicale. Puis-je planifier un rappel par l'un de nos agents ?",
+    "Je suis en train d'analyser votre demande... Pour des informations medicales precises, je vous recommande de consulter directement un medecin de NeoCare."
+  ],
+  "typingDelay": {
+    "min": 1000,
+    "max": 2500
+  }
+}

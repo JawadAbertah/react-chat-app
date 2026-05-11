@@ -1,0 +1,14 @@
+:root {
+  --bg: #0f172a;
+  --text: #e2e8f0;
+  --accent: #38bdf8;
+  --surface: #111827;
+  --border: #1f2937;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}

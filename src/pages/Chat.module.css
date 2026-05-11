@@ -1,0 +1,252 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: #0b1220;
+  color: white;
+}
+
+/* HEADER */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+  border-bottom: 1px solid #1e293b;
+  background: #0f172a;
+}
+
+.ariaInfo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.ariaAvatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: #38bdf8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.ariaName {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.ariaStatus {
+  font-size: 13px;
+  color: #94a3b8;
+  margin-top: 4px;
+}
+
+.statusDot {
+  width: 8px;
+  height: 8px;
+  background: #22c55e;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.resetBtn {
+  background: #1e293b;
+  color: white;
+  border: 1px solid #334155;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.resetBtn:hover {
+  background: #334155;
+}
+
+/* MESSAGES */
+
+.messagesZone {
+  flex: 1;
+  overflow-y: auto;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.msgRow {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.botRow {
+  justify-content: flex-start;
+}
+
+.userRow {
+  justify-content: flex-end;
+}
+
+.botAvatarSmall {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: #38bdf8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.bubble {
+  padding: 14px 16px;
+  border-radius: 16px;
+  max-width: 70%;
+  line-height: 1.5;
+  animation: fadeIn 0.2s ease;
+}
+
+.botBubble {
+  background: #172033;
+  border: 1px solid #22304b;
+  color: #e2e8f0;
+}
+
+.userBubble {
+  background: #38bdf8;
+  color: #0f172a;
+  font-weight: 500;
+}
+
+.msgText {
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+.msgTime {
+  display: block;
+  margin-top: 8px;
+  font-size: 11px;
+  opacity: 0.6;
+}
+
+/* INPUT */
+
+.inputArea {
+  border-top: 1px solid #1e293b;
+  padding: 18px 24px;
+  background: #0f172a;
+}
+
+.inputWrapper {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.textarea {
+  flex: 1;
+  resize: none;
+  background: #172033;
+  border: 1px solid #243041;
+  color: white;
+  border-radius: 14px;
+  padding: 14px;
+  min-height: 52px;
+  font-size: 14px;
+}
+
+.textarea:focus {
+  border-color: #38bdf8;
+  outline: none;
+}
+
+.sendBtn {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  border: none;
+  background: #38bdf8;
+  color: #0f172a;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.sendBtn:hover {
+  transform: scale(1.05);
+}
+
+.hint {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #64748b;
+}
+
+/* TYPING */
+
+.typingRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.typingBubble {
+  background: #172033;
+  border: 1px solid #22304b;
+  padding: 12px 16px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #38bdf8;
+  animation: blink 1.4s infinite;
+}
+
+.dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.typingLabel {
+  margin-left: 10px;
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+@keyframes blink {
+  0%, 80%, 100% {
+    opacity: 0.3;
+  }
+  40% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
